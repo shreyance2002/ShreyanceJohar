@@ -1,0 +1,44 @@
+/* Css for index.html */
+
+header
+{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.h-logo
+{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--main-color);
+}
+
+.h-list
+{
+    list-style-type: none;
+}
+
+.h-list li 
+{
+    display: inline;
+    padding: 0 10px;
+}
+
+.h-list li a
+{
+    display: inline-block;
+    color: var(--main-color);
+    opacity: 40%;
+    transition: 0.5s;
+}
+
+.h-list li a:hover
+{
+    opacity: 100%;
+    transform: scale(1.2);
+}

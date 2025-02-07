@@ -1,2 +1,33 @@
-/* Css for index.html */
+/* Common Css for the site */
 
+:root
+{
+    --background-color: white;
+    --main-color: black;
+}
+
+.figtree-fnt 
+{
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+  
+body
+{
+    font-family: "Figtree", serif;
+}
