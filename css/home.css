@@ -1,5 +1,7 @@
 /* Css for index.html */
 
+/* Header */
+
 header
 {
     position: fixed;
@@ -9,6 +11,7 @@ header
     justify-content: space-between;
     align-items: center;
     padding: 3% 5%;
+    z-index: 100;
 }
 
 .h-logo
@@ -63,10 +66,60 @@ header
     transform: translateX(0%) !important;
 }
 
+/* Container */
+
+.container 
+{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid red;
+}
+
+/* Hero */
+
+.hero
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.blob
+{
+  position: absolute;
+  /* top: 15%; */
+  width: 90%;
+  height: 80%;
+}
+
+.blob:nth-child(2)
+{
+  filter: blur(50px);
+}
+
+.b-txt
+{
+  font-weight: 550;
+  text-align: center;
+  background-image: linear-gradient(#e66465, #9198e5);
+  color: transparent;
+  -webkit-background-clip: text;
+  mix-blend-mode: difference;
+  font-size: 80px;
+  z-index: 2;
+  text-transform: capitalize;
+}
+
 /* Media Queries */
 
-/* md */
-@media (max-width: 768px)
+/* Header only mq*/
+@media (max-width: 768px), (max-width: 475px)
 {
     body
     {
@@ -98,13 +151,46 @@ header
     {
         opacity: 0;
     }
-}
 
-/* xs */
-@media (max-width: 475px)
-{
-    body
+    .container 
     {
-        display: none;
+        max-width: 640px;
     }
 }
+
+/* md screen size */
+
+@media (max-width: 768px)
+{
+    .blob
+    {
+        height: 80%;
+        width: 90%;
+    }
+
+    .b-txt
+    {
+        font-size: 10vw;
+    }
+}
+
+/* xs screen size*/
+
+@media (max-width: 475px) 
+{
+    /* .container 
+    {
+      width: 100%;
+    } */
+
+    .blob
+    {
+        height: 80%;
+        width: 90%;
+    }
+
+    .b-txt
+    {
+        font-size: 40px;
+    }
+  }
