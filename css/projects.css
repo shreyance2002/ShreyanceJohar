@@ -228,6 +228,23 @@ header
   filter: grayscale(100%);
 }
 
+.nr-pic-cont
+{
+  width: 100%;
+  min-height: 50vh;
+  max-height: 65vh;
+  background-color: white;
+  overflow: hidden;
+  opacity: 75%;
+}
+
+.nr-pic
+{
+  width: 100%;
+  position: relative;
+  bottom: 200px;
+}
+
 /* Proj Main */
 
 .proj-main-cont
