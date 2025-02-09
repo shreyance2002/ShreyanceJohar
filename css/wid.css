@@ -1,0 +1,340 @@
+/* Css for WID pages */
+
+/* Header */
+
+header
+{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    z-index: 100;
+}
+
+.h-logo
+{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--main-color);
+}
+
+.h-list
+{
+    list-style-type: none;
+}
+
+.h-list li 
+{
+    display: inline;
+    padding: 0 10px;
+}
+
+.h-list li a
+{
+    display: inline-block;
+    color: var(--main-color);
+    opacity: 40%;
+    transition: 0.5s;
+}
+
+.h-list li a:hover
+{
+    opacity: 100%;
+    transform: scale(1.2);
+}
+
+.burger
+{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div
+{
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.nav-active
+{
+    transform: translateX(0%) !important;
+}
+
+/* Hero */
+
+.hero
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.hero-txt-cont
+{
+    width: 355px;
+    padding: 0 0.5em;
+}
+
+.hero-title
+{
+    color: var(--main-color);
+    line-height: 1.1em;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.wid-p
+{
+    letter-spacing: 0.1em;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* works */
+
+.wid-grid
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.wid-gitem
+{
+    background-color: antiquewhite;
+    line-height: 0;
+    height: 100%;
+}
+
+.wid-gitem-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.wid-btn-cont
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 100px;
+}
+
+/* Fashion Films */
+
+.ff-cont
+{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.ff-title
+{
+    font-weight: 500;
+    padding-bottom: 2%;
+    font-size: 2em;
+}
+
+.ff-gitem
+{
+    line-height: 1;
+}
+
+iframe
+{
+    width: 560px;
+    height: 360px;
+}
+
+/* Art Direction & Production */
+
+.wid-grid-ad
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* From Uiverse.io by TISEPSE */ 
+.btn2 
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    border: 2px solid #000000;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 10px;
+    transition: 0.3s;
+}
+  
+.btn2::before 
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #ffffff;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+}
+  
+.btn2::after 
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #ffffff;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+}
+  
+.btn2:hover::before 
+{
+    transform: translateY(-25px);
+    height: 0;
+}
+  
+.btn2:hover::after 
+{
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+}
+  
+.btn2:hover 
+{
+    border: 2px solid #000000;
+}
+  
+.btn2 span 
+{
+    position: relative;
+    z-index: 3;
+}
+  
+.wid-btn
+{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+
+/* Header only mq*/
+@media (max-width: 768px), (max-width: 475px)
+{
+    header
+    {
+        padding: 1rem 0.5rem;
+    }
+
+    body
+    {
+        overflow-x: hidden;
+    }
+
+    .burger
+    {
+        display: block;
+    }
+
+    .h-list
+    {
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top: 12vh;
+        background-color: rgba(255, 255, 255, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 1s ease-in;
+    }
+
+    .h-list a
+    {
+        opacity: 0;
+    }
+
+    .container 
+    {
+        max-width: 640px;
+    }
+}
+
+/* md screen size */
+
+@media (max-width: 768px)
+{
+    .ff-cont .wid-grid
+    {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    iframe
+    {
+        width: 100%;
+    }
+}
+
+/* xs screen size*/
+
+@media (max-width: 475px) 
+{
+    .container 
+    {
+      width: 100%;
+      padding-bottom: 25%;
+    }
+
+    .wid-grid
+    {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .wid-btn-cont
+    {
+        justify-content: center;
+    }
+
+    iframe
+    {
+        width: 100%;
+    }
+
+    .wid-grid-ad
+    {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+}

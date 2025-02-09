@@ -74,18 +74,6 @@ header
     transform: translateX(0%) !important;
 }
 
-/* Container */
-
-.container 
-{
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 15%;
-}
-
 /* Hero */
 
 .hero
@@ -226,14 +214,14 @@ header
 .bnr-l
 {
   animation: left-appear linear;
-  animation-timeline: view();
+  /* animation-timeline: view(); */
   animation-range: entry 0% cover 50%;
 }
 
 .bnr-r
 {
   animation: right-appear linear;
-  animation-timeline: view();
+  /* animation-timeline: view(); */
   animation-range: entry 0% cover 50%;
 }
 
@@ -428,4 +416,4 @@ header
     {
         gap: 100px;
     }
-  }
+}
