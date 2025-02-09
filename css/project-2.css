@@ -6,21 +6,3 @@ body
   background-size: contain;
   color: var(--page-color);
 }
-
-.ps-center
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pt-2
-{
-  font-weight: 500;
-  color: #342624;
-}
-
-.proj-info
-{
-  font-size: 18px;
-}
