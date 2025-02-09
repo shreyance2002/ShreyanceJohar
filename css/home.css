@@ -401,13 +401,13 @@ header
 
     .wid .sub-heading
     {
-    padding-left: 0.5rem;
+    padding-left: 3rem;
     }
 
     .wl-item
     {
-        font-size: 30px;
-        padding-left: 0.5rem;
+        font-size: 25px;
+        padding-left: 3rem;
     }
 
     .pb

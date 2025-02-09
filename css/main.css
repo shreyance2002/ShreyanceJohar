@@ -6,6 +6,17 @@
     --main-color: black;
 }
 
+.dark-mode
+{
+  --background-color: black;
+  --main-color: white;
+}
+
+.vol
+{
+  
+}
+
 .figtree-fnt 
 {
     font-family: "Figtree", serif;
@@ -84,6 +95,9 @@ body
 {
     font-family: "Figtree", serif;
     overflow-x: hidden;
+    transition: 1s;
+    background-color: var(--background-color);
+    color: var(--main-color);
 }
 
 /* Container */
@@ -108,7 +122,6 @@ body
   position: fixed;
   bottom: 0px;
   left: 0px;
-  /* width: 100%; */
   padding: 0 0 5% 5%;
   z-index: 1;
 }
@@ -133,4 +146,122 @@ body
 {
   opacity: 100%;
   transform: scale(1.2);
+}
+
+/* Tools */
+
+.tools
+{
+  display: inline;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 0 5% 5% 0;
+  z-index: 1;
+}
+
+#theme-switch
+{
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#theme-switch svg
+{
+  fill: var(--main-color);
+  transition: 1s;
+  opacity: 40%;
+}
+
+#theme-switch svg:hover
+{
+  transform: scale(1.2);
+  opacity: 100%;
+}
+
+#theme-switch svg:last-child
+{
+  display: none;
+}
+
+.dark-mode #theme-switch svg:first-child
+{
+  display: none;
+}
+
+.dark-mode #theme-switch svg:last-child
+{
+  display: block;
+}
+
+/* Volume */
+#vol-switch
+{
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#vol-switch svg
+{
+  fill: var(--main-color);
+  transition: 1s;
+  opacity: 40%;
+}
+
+#vol-switch svg:hover
+{
+  opacity: 100%;
+  transform: scale(1.2);
+}
+
+#vol-switch svg:last-child
+{
+  display: none;
+}
+
+.vol #vol-switch svg:first-child
+{
+  display: none;
+}
+
+.vol #vol-switch svg:last-child
+{
+  display: block;
+}
+
+@media (max-width: 475px) 
+{
+    .container 
+    {
+      width: 100%;
+      padding-bottom: 25%;
+    }
+
+    header
+    {
+      position: inherit;
+    }
+
+    .h-logo
+    {
+      font-size: 15px;
+    }
 }
