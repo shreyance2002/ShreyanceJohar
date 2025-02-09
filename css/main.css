@@ -96,5 +96,41 @@ body
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 15%;
-    border: 1px solid red;
+}
+
+/* Footer */
+
+.footer
+{
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  /* width: 100%; */
+  padding: 0 0 5% 5%;
+  z-index: 1;
+}
+
+.f-socials
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.f-logo
+{
+  font-size: 25px;
+  color: var(--main-color);
+  cursor: pointer;
+  opacity: 40%;
+  transition: 0.5s;
+}
+
+.f-logo:hover
+{
+  opacity: 100%;
+  transform: scale(1.2);
 }

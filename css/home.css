@@ -172,8 +172,11 @@ header
 {
     font-size: 60px;
     color: var(--main-color);
-    border: 1px solid var(--main-color);
-    border-style: solid none;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 1px solid var(--main-color);
+    border-style: solid;
     padding: 1% 0 1% 10%;
     cursor: pointer;
   
