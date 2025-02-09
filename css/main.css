@@ -42,6 +42,30 @@
   }
 }
 
+@keyframes bottom-appear
+{
+  from
+  {
+    scale: 0.5;
+  }
+  to
+  {
+    scale: 1;
+  }
+}
+
+@keyframes bottom-disappear
+{
+  from
+  {
+    scale: 1;
+  }
+  to
+  {
+    scale: 0.1;
+  }
+}
+
 *
 {
     margin: 0;
