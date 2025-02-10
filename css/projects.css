@@ -82,7 +82,7 @@ header
 .button:hover 
 {
     box-shadow: 1px 1px 200px var(--main-color);
-    color: var(--main-color);
+    color: var(--background-color);
     border-color: var(--main-color);
 }
   
@@ -442,7 +442,7 @@ header
     text-transform: uppercase;
     font-size: 100px;
     font-weight: 500;
-    color: #342624;
+    color: var(--main-color);
 }
 
 /* Project 3 */

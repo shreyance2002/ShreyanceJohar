@@ -253,7 +253,7 @@ header
     animation: bottom-appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
-    opacity: 80%;
+    opacity: 95%;
     transition: transform 1s;
     width: 60%;
 }
