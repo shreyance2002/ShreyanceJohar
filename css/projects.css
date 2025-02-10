@@ -122,16 +122,17 @@ header
 
 .side-bar a
 {
-  text-decoration: none;
-  padding: 10px ;
-  opacity: 80%;
-  transition: 0.4s;
-  color: var(--main-color);
+    text-decoration: none;
+    padding: 10px ;
+    opacity: 80%;
+    transition: 0.4s;
+    color: var(--main-color);
 }
 
 .side-bar a:hover
 {
-  opacity: 100%;
+    transform: scale(1.2);
+    opacity: 100%;
 }
 
 /* Project Hero */
@@ -299,6 +300,20 @@ header
     grid-area: 3/1/5/3;
 }
 
+.g-li
+{
+  animation: left-appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
+}
+
+.g-ri
+{
+  animation: right-appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
+}
+
 /* Project Pics */
 
 .project-pics
@@ -409,21 +424,21 @@ header
     font-size: 18px;
   }
   
-  .button-30:focus {
+.button-30:focus {
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   }
   
-  .button-30:hover {
+.button-30:hover {
     box-shadow: rgba(45, 35, 66, 0.8) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
   }
   
-  .button-30:active {
+.button-30:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
   }
   
-  .p1-info .proj-heading
+.p1-info .proj-heading
   {
     padding: 50px 0 20px 0;
   }

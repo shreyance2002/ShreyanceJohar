@@ -128,10 +128,9 @@ header
     line-height: 0;
     height: 100%;
     object-fit: cover;
-    transition: 2s;
 }
 
-.wid-gitem:hover
+.wid-gitem-img:hover
 {
     transform: scale(0.8);
 }
@@ -142,6 +141,7 @@ header
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    transition: 2s;
 }
 
 .wid-btn-cont

@@ -130,7 +130,7 @@ header
 
 .abt-txt-cont
 {
-    background-color: white;
+    background-color: var(--background-color);
     color: transparent;
     -webkit-background-clip: text;
 }
@@ -144,7 +144,7 @@ header
     background-size: 0% 100%;
     background-repeat: no-repeat;
     animation: text-reveal linear forwards;
-    animation-timeline: view(80% 20%);
+    animation-timeline: view(80% 5%);
     display: inline;
 }
 
@@ -217,14 +217,14 @@ header
 .bnr-l
 {
   animation: left-appear linear;
-  /* animation-timeline: view(); */
+  animation-timeline: view();
   animation-range: entry 0% cover 50%;
 }
 
 .bnr-r
 {
   animation: right-appear linear;
-  /* animation-timeline: view(); */
+  animation-timeline: view();
   animation-range: entry 0% cover 50%;
 }
 
