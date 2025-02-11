@@ -1,0 +1,64 @@
+/* CSS for blogs pages */
+
+.blogs-cont
+{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    gap: 75px;
+    text-align: center;
+}
+
+.b-grid-item
+{
+    padding-bottom: 10%;
+}
+
+.b-img-cont
+{
+    width: 100%;
+}
+
+.b-img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.blog-side-col
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+}
+
+.blog-mid-col
+{
+    margin-top: 15%;
+    margin-bottom: auto;
+    flex: 1;
+}
+
+.blog-title
+{
+    padding: 5% 0;
+}
+
+.blog-subtitle
+{
+    padding: 0 10%;
+}
+
+.blog-date
+{
+    padding-top: 5%;
+}
+
+.wid-btn-cont
+{
+    justify-content: center;
+}

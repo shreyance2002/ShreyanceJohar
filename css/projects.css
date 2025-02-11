@@ -460,6 +460,13 @@ header
     color: var(--main-color);
 }
 
+/* Project 2 */
+
+#my-appr
+{
+    padding-bottom: 0px;
+}
+
 /* Project 3 */
 
 .p1-heading
@@ -541,11 +548,14 @@ header
 
 .docu-cont
 {
-    position: relative;
-    left: 42.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     width: 50%;
     height: 70vh;
     scroll-margin: 50px;
+    padding-top: 5%;
 }
 
 .docu
