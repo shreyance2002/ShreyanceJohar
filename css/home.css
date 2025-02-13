@@ -295,6 +295,22 @@ header
   color: var(--main-color);
 }
 
+.man-subtitle
+{
+    font-style: italic;
+    font-weight: 300;
+}
+
+.info-logo
+{
+    width: 30px;
+}
+
+.info-log0:hover
+{
+    transform: scale(1.2);
+}
+
 /* Media Queries */
 
 /* Header only mq*/
@@ -335,6 +351,75 @@ header
     {
         max-width: 640px;
     }
+}
+
+/* Information Section */
+
+.info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 10%;
+}
+
+.info-tile-cont
+{
+    display: flex;
+    gap: 20px;
+}
+
+.info-tile-col
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.info-tile
+{
+    border-radius: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 5%;
+    background-color: rgba(156, 156, 156, 0.1);
+}
+
+.info-heading
+{
+    font-weight: 700;
+    padding-bottom: 5%;
+}
+
+.info-txt
+{
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 5%;
+}
+
+.info-txt-ovr
+{
+    font-size: 24px;
+}
+
+.info-img-cont
+{
+    width: 100%;
+    line-height: 0;
+}
+
+.info-img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ts-cont
+{
+    display: flex;
+    gap: 20px;
 }
 
 /* md screen size */

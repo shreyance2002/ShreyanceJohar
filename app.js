@@ -1,36 +1,54 @@
-const music = document.querySelector("audio");
-
+// Code for drop down menu
 const menuSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".h-list");
-    const body = document.querySelector("body");
-    const themeBtn = document.querySelector("#theme-switch");
-    const volBtn = document.querySelector("#vol-switch");
-    
 
     burger.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
     });
-
-    themeBtn.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-    });
-
-    volBtn.addEventListener("click", () => {
-        body.classList.toggle("vol");
-        if(music.volume>0.1)
-        {
-            music.volume = 0;
-        }
-        else
-        {
-            music.volume = 1;
-        }
-    })
 }
-
 menuSlide();
 
+// Code for background music
+const music = document.querySelector("audio");
+const volBtn = document.querySelector("#vol-switch");
 document.onmousedown = function(){
     music.play();
 }
+
+volBtn.addEventListener("click", () => {
+    body.classList.toggle("vol");
+    if(music.volume>0.1)
+    {
+        music.volume = 0;
+    }
+    else
+    {
+        music.volume = 1;
+    }
+});
+
+// Code for Dark Mode
+const body = document.querySelector("body");
+const themeBtn = document.querySelector("#theme-switch");
+let darkmode = localStorage.getItem("darkmode");
+
+const enableDarkMode = () => {
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("darkmode", "active");
+}
+
+const disableDarkMode = () => {
+    document.body.classList.remove("dark-mode");
+    localStorage.setItem("darkmode", null);
+}
+
+if(darkmode === "active")
+{
+    enableDarkMode();
+}
+
+themeBtn.addEventListener("click", () => {
+    darkmode = localStorage.getItem("darkmode");
+    darkmode !== "active" ? enableDarkMode() : disableDarkMode();
+});

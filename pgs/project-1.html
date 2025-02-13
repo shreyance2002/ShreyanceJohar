@@ -8,6 +8,8 @@
      <link rel="stylesheet" href="../css/wid.css">
      <link rel="stylesheet" href="../css/projects.css">
      <link rel="icon" href="../imgs/favicon.png" type="image/png">
+     <script src="../app.js" defer></script>
+     <script src="../projects.js" defer></script>
      <!-- Fonts -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -202,7 +204,7 @@
         </div>
     </section>
 
-      <div class="pro-container">
+    <div class="pro-container">
         <h2 id="loopholes" class="proj-heading">Loopholes</h2>
         <p class="proj-info">Ensuring brand sustainability and scalability over time. Balancing customization-focused services with broader market appeal. Addressing the needs of non-fashion-centric individuals while staying relevant to fashion-forward audiences.</p>
 
@@ -210,9 +212,21 @@
         <p class="proj-info"><strong>Customization and Tweaking:</strong> Designed an experiential retail and online space where customers can personalize and tweak garments from a curated collection, embracing individuality and diverse preferences. <br><br>
 
             <strong>Basics and Elevated Basics Collection:</strong> Launched a mix of timeless basics and trend-driven pieces to appeal to both fashion enthusiasts and non-fashion-centric individuals, adhering to the “70/30 rule” for versatile wardrobe options.</p>
-     </div>
+    </div>
 
-     <script src="../app.js"></script>
-    <script src="../projects.js"></script>
+    <!-- Feedback Form -->
+     <section class="pro-container">
+        <h1 class="proj-heading">Thoughts?</h1>
+        <p class="proj-info">Feel free to write down what you think about my project!</p>
+
+        <div class="fb-form-cont">
+            <form action="">
+                <input type="text" name="name" placeholder="Name" class="fb-form-input" required maxlength="20">
+                <input type="email" name="email" placeholder="E-mail" class="fb-form-input" required>
+                <textarea name="message" placeholder="Your Message..." class="fb-form-input" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+     </section>
 </body>
 </html>
