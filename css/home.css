@@ -130,21 +130,22 @@ header
 
 .abt-txt-cont
 {
-    background-color: var(--background-color);
-    color: transparent;
-    -webkit-background-clip: text;
+    /* background-color: var(--background-color); */
+    /* color: transparent;
+    -webkit-background-clip: text; */
 }
 
 .abt-txt
 {
     font-size: 64px;
     font-weight: 500;
-    background-image: linear-gradient(90deg, #c72c41, #c72c41);
+    color: #c72c41;
+    /* background-image: linear-gradient(90deg, #c72c41, #c72c41);
     background-clip: text;
     background-size: 0% 100%;
     background-repeat: no-repeat;
     animation: text-reveal linear forwards;
-    animation-timeline: view(80% 5%);
+    animation-timeline: view(80% 5%); */
     display: inline;
 }
 
