@@ -1,12 +1,12 @@
 /* Css for index.html */
 
-@keyframes text-reveal
+/* @keyframes text-reveal
 {
   to
   {
     background-size: 100% 100%;
   }
-}
+} */
 
 /* Header */
 
@@ -164,9 +164,9 @@ header
 .wid-list
 {
     width: 100%;
-    animation: left-appear linear;
+    /* animation: left-appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 50%; */
 }
 
 .wl-item
@@ -180,9 +180,9 @@ header
   
     background-position: right;
   
-    animation: left-appear linear;
+    /* animation: left-appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 15%;
+    animation-range: entry 0% cover 15%; */
 }
 
 .wl-item:hover
@@ -212,16 +212,16 @@ header
 
 .bnr-l
 {
-    animation: left-appear linear;
+    /* animation: left-appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 50%; */
 }
 
 .bnr-r
 {
-    animation: right-appear linear;
+    /* animation: right-appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 50%; */
 }
 
 /* Projects */
@@ -246,9 +246,9 @@ header
 
 .pro
 {
-    animation: bottom-appear linear;
+    /* animation: bottom-appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 30%; */
     opacity: 95%;
     transition: transform 1s;
     width: 60%;
