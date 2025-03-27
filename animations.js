@@ -1,7 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const splitTypes = document.querySelectorAll(".abt-txt");
 
+// Animation for about me text in index page
+const splitTypes = document.querySelectorAll(".abt-txt");
 splitTypes.forEach((words, i) => {
     const text = new SplitType(words, {types: 'words'})
 
@@ -10,6 +11,7 @@ splitTypes.forEach((words, i) => {
             trigger: words,
             start: 'top 60%',
             end: 'top 20%',
+            lazy: false,
             scrub: true,
             markers: false
         },
@@ -18,6 +20,7 @@ splitTypes.forEach((words, i) => {
     })
 })
 
+// Animation for left appear
 gsap.from(".bnr-l" , {
     scrollTrigger: {
         trigger: ".bnr-l",
@@ -30,6 +33,7 @@ gsap.from(".bnr-l" , {
     opacity: 0.1
 })
 
+// Animation for right appear
 gsap.from(".bnr-r" , {
     scrollTrigger: {
         trigger: ".bnr-r",
@@ -42,23 +46,8 @@ gsap.from(".bnr-r" , {
     opacity: 0.1
 })
 
-const pro = document.querySelectorAll(".pro");
-pro.forEach((hPro, i) => {
-    gsap.from(hPro, {
-        scrollTrigger: {
-            trigger: hPro,
-            start: 'top 80%',
-            end: 'top 20%',
-            scrub: true,
-            markers: false,
-        },
-        scale: 0.5,
-        opacity: 0.2
-    })
-})
-
+// Animation for WID list
 const wItem = document.querySelectorAll(".wl-item");
-console.log(wItem);
 wItem.forEach((wLi, i) => {
     gsap.from(wLi, {
         scrollTrigger: {
@@ -70,5 +59,87 @@ wItem.forEach((wLi, i) => {
         },
         x: -200,
         opacity: 0
+    })
+})
+
+// Animation for each project in index page
+const pro = document.querySelectorAll(".pro");
+pro.forEach((hPro, i) => {
+    ScrollTrigger.refresh();
+    gsap.from(hPro, {
+        scrollTrigger: {
+            trigger: hPro,
+            start: 'top 80%',
+            end: 'top 20%',
+            lazy: false,
+            scrub: true,
+            markers: false,
+        },
+        scale: 0.5,
+        opacity: 0.2
+    })
+})
+
+// Animation for project title
+gsap.to(".pro-hero", {
+    scrollTrigger: {
+        trigger: ".pro-title-img-cont",
+        start: 'top %',
+        end: 'bottom 5%',
+        lazy: false,
+        scrub: true,
+        markers: false,
+    },
+    scale: 0.3,
+    opacity: 0.5
+})
+
+// Animation for project hero photo
+const pHeroImg = document.querySelector(".pro-title-img-cont");
+gsap.from(pHeroImg, {
+    scrollTrigger: {
+        trigger: pHeroImg,
+        start: 'top 80%',
+        end: 'top 20%',
+        lazy: false,
+        scrub: true,
+        markers: false,
+    },
+    scale: 0.7,
+    opacity: 0.8
+})
+
+// Animations for left appear pictures
+const lAppPics = document.querySelectorAll(".g-li");
+ScrollTrigger.refresh();
+console.log(lAppPics);
+lAppPics.forEach((lAP, i) => {
+    gsap.from(lAP , {
+        scrollTrigger: {
+            trigger: lAP,
+            start: 'top 90%',
+            end: 'bottom 90%',
+            scrub: true,
+            markers: false
+        },
+        x: -200,
+        opacity: 0.1
+    })
+})
+
+// Animations for right appear pictures
+const rAppPics = document.querySelectorAll(".g-ri");
+console.log(rAppPics);
+rAppPics.forEach((rAP, i) => {
+    gsap.from(rAP , {
+        scrollTrigger: {
+            trigger: rAP,
+            start: 'top 90%',
+            end: 'bottom 90%',
+            scrub: true,
+            markers: false
+        },
+        x: 200,
+        opacity: 0.1
     })
 })
