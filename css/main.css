@@ -25,7 +25,7 @@
     font-style: normal;
 }
 
-@keyframes left-appear
+/* @keyframes left-appear
 {
   from
   {
@@ -75,7 +75,7 @@
   {
     scale: 0.1;
   }
-}
+} */
 
 *
 {

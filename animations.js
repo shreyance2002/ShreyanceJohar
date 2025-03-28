@@ -1,7 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Loaded!");
 
-// Animation for about me text in index page
+    // Animation for about me text in index page
 const splitTypes = document.querySelectorAll(".abt-txt");
 splitTypes.forEach((words, i) => {
     const text = new SplitType(words, {types: 'words'})
@@ -69,14 +71,14 @@ pro.forEach((hPro, i) => {
     gsap.from(hPro, {
         scrollTrigger: {
             trigger: hPro,
-            start: 'top 80%',
-            end: 'top 20%',
+            start: '0% 100%',
+            end: '50% 50%',
+            ease: "none",
             lazy: false,
             scrub: true,
             markers: false,
         },
-        scale: 0.5,
-        opacity: 0.2
+        scale: 0.7,
     })
 })
 
@@ -143,3 +145,6 @@ rAppPics.forEach((rAP, i) => {
         opacity: 0.1
     })
 })
+})
+
+
