@@ -96,12 +96,14 @@ header
   height: 90%;
 }
 
-/* .blob:nth-child(2)
+.blob:nth-child(2)
 {
-  -webkit-filter: blur(50px); 
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0); 
   filter: blur(50px);
-  z-index: 10;
-} */
+}
 
 .b-txt
 {
