@@ -96,12 +96,12 @@ header
   height: 90%;
 }
 
-.blob:nth-child(2)
+/* .blob:nth-child(2)
 {
   -webkit-filter: blur(50px); 
-  /* backdrop-filter: blur(5px); */
   filter: blur(50px);
-}
+  z-index: 10;
+} */
 
 .b-txt
 {
