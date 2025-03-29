@@ -18,13 +18,22 @@ document.onmousedown = function(){
 
 volBtn.addEventListener("click", () => {
     body.classList.toggle("vol");
-    if(music.volume>0.1)
+    // if(music.volume>0.1)
+    // {
+    //     music.volume = 0;
+    // }
+    // else
+    // {
+    //     music.volume = 1;
+    // }
+
+    if(music.muted)
     {
-        music.volume = 0;
+        music.muted = false;
     }
     else
     {
-        music.volume = 1;
+        music.muted = true;
     }
 });
 

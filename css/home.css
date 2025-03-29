@@ -249,8 +249,8 @@ header
 {
     /* animation: bottom-appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%; */
-    transition: transform 1s;
+    animation-range: entry 0% cover 30%;
+    transition: transform 1s; */
     width: 60%;
 }
 
