@@ -84,6 +84,7 @@ header
     align-items: center;
     justify-content: center;
     height: 100vh;
+    max-height: 100vh;
     padding-top: 10%;
 }
 
@@ -97,6 +98,8 @@ header
 
 .blob:nth-child(2)
 {
+  -webkit-filter: blur(50px); 
+  /* backdrop-filter: blur(5px); */
   filter: blur(50px);
 }
 
@@ -478,11 +481,6 @@ header
       /* padding-bottom: 20%; */
     }
 
-    #index-hero
-    {
-        padding-bottom: 0;
-    }
-
     .hero
     {
         padding-top: 0;
@@ -502,7 +500,7 @@ header
 
     .abt-me
     {
-        padding-top: 0;
+        padding-top: 0%;
     }
 
     .abt-txt
