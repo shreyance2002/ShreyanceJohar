@@ -249,11 +249,11 @@ body
 
 @media (max-width: 475px) 
 {
-    .container 
+    /* .container 
     {
       width: 100%;
       padding-bottom: 25%;
-    }
+    } */
 
     header
     {
