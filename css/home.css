@@ -491,7 +491,7 @@ header
     .hero
     {
         padding-top: 0;
-        padding-bottom: 0;
+        height: 90vh;
     }
 
     .blob
@@ -529,6 +529,7 @@ header
     {
         font-size: 25px;
         padding-left: 3rem;
+        padding-bottom: 5%;
     }
 
     .pb
