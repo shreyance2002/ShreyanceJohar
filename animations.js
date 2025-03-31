@@ -27,7 +27,7 @@ gsap.from(".bnr-l" , {
         trigger: ".bnr-l",
         start: 'top 80%',
         end: 'bottom 50%',
-        scrub: true,
+        scrub: false,
         markers: false
     },
     x: -200,
@@ -40,7 +40,7 @@ gsap.from(".bnr-r" , {
         trigger: ".bnr-r",
         start: 'top 80%',
         end: 'bottom 50%',
-        scrub: true,
+        scrub: false,
         markers: false
     },
     x: 200,
@@ -55,7 +55,7 @@ wItem.forEach((wLi, i) => {
             trigger: wLi,
             start: 'top 80%',
             end: 'bottom 80%',
-            scrub: true,
+            scrub: false,
             markers: false
         },
         x: -200,
@@ -74,7 +74,7 @@ pro.forEach((hPro, i) => {
             end: '50% 50%',
             ease: "none",
             lazy: false,
-            scrub: true,
+            scrub: false,
             markers: false,
         },
         scale: 0.7,
@@ -120,7 +120,7 @@ lAppPics.forEach((lAP, i) => {
             trigger: lAP,
             start: 'top 90%',
             end: 'bottom 90%',
-            scrub: true,
+            scrub: false,
             markers: false
         },
         x: -200,
@@ -137,7 +137,7 @@ rAppPics.forEach((rAP, i) => {
             trigger: rAP,
             start: 'top 90%',
             end: 'bottom 90%',
-            scrub: true,
+            scrub: false,
             markers: false
         },
         x: 200,
