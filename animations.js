@@ -28,7 +28,7 @@ gsap.from(".bnr-l" , {
         start: 'top 80%',
         end: 'bottom 50%',
         scrub: false,
-        toggleActions: "play pause resume reset",
+        toggleActions: "play resume resume reset",
         markers: false
     },
     x: -200,
@@ -42,7 +42,7 @@ gsap.from(".bnr-r" , {
         start: 'top 80%',
         end: 'bottom 50%',
         scrub: false,
-        toggleActions: "play pause resume reset",
+        toggleActions: "play resume resume reset",
         markers: false
     },
     x: 200,
@@ -58,7 +58,7 @@ wItem.forEach((wLi, i) => {
             start: 'top 80%',
             end: 'bottom 80%',
             scrub: false,
-            toggleActions: "play pause resume reset",
+            toggleActions: "play resume resume reset",
             markers: false
         },
         x: -200,
@@ -78,7 +78,7 @@ pro.forEach((hPro, i) => {
             ease: "none",
             lazy: false,
             scrub: false,
-            toggleActions: "play pause resume reset",
+            toggleActions: "play resume resume reset",
             markers: false,
         },
         scale: 0.7,
@@ -125,7 +125,7 @@ lAppPics.forEach((lAP, i) => {
             start: 'top 90%',
             end: 'bottom 90%',
             scrub: false,
-            toggleActions: "play pause resume reset",
+            toggleActions: "play resume resume reset",
             markers: false
         },
         x: -200,
@@ -143,7 +143,7 @@ rAppPics.forEach((rAP, i) => {
             start: 'top 90%',
             end: 'bottom 90%',
             scrub: false,
-            toggleActions: "play pause resume reset",
+            toggleActions: "play resume resume reset",
             markers: false
         },
         x: 200,
