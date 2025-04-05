@@ -120,7 +120,6 @@ header
   mix-blend-mode: difference;
   font-size: 80px;
   z-index: 2;
-  text-transform: capitalize;
 }
 
 /* About Me */
@@ -201,7 +200,7 @@ header
     color: white;
     background: linear-gradient(to right, #c72c41 50%,  white 50%)  left;
     background-size: 200%;
-    transition: 1s ease-out;
+    transition: 0.5s ease-out;
 }
 
 /* Banner */
@@ -521,7 +520,7 @@ header
 
     .abt-txt
     {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .wid
@@ -536,7 +535,7 @@ header
 
     .wl-item
     {
-        font-size: 18px;
+        font-size: 20px;
         padding-left: 3rem;
         padding-bottom: 5%;
     }
