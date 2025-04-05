@@ -237,14 +237,14 @@ header
 
 /* Projects */
 
-.projects
+/* .projects
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 150px;
-}
+} */
 
 .projects a
 {
@@ -257,11 +257,7 @@ header
 
 .pro
 {
-    /* animation: bottom-appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-    transition: transform 1s; */
-    width: 60%;
+    padding: 5% 0;
 }
 
 /* .pro:hover
@@ -301,7 +297,7 @@ header
 {
   color: var(--main-color);
   font-size: 24px;
-  padding: 5px 0;
+  padding: 20px 0 10px 0;
   font-weight: 500;
 }
 
@@ -310,6 +306,19 @@ header
   font-weight: 300;
   color: var(--main-color);
 }
+
+/* Projects section new */
+
+.pro-gal
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+}
+
+/* info section */
 
 .man-subtitle
 {
