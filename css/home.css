@@ -212,6 +212,7 @@ header
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding-bottom: 5%;
     /* max-width: 100%; */
 }
 
@@ -259,12 +260,6 @@ header
 {
     padding: 5% 0;
 }
-
-/* .pro:hover
-{
-    opacity: 100%; */
-    /* transform: scale(1.1);
-} */
 
 .pro-img-cont
 {
@@ -328,7 +323,7 @@ header
 
 .info-logo
 {
-    width: 30px;
+    width: 45px;
 }
 
 .info-logo:hover
@@ -451,6 +446,7 @@ header
 .ts-cont
 {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -524,7 +520,7 @@ header
 
     .abt-txt
     {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .wid
@@ -539,7 +535,7 @@ header
 
     .wl-item
     {
-        font-size: 25px;
+        font-size: 18px;
         padding-left: 3rem;
         padding-bottom: 5%;
     }
@@ -557,5 +553,19 @@ header
     .pro
     {
         width:  100%;
+    }
+
+    .pro-gal
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .pro-subtitle
+    {
+        font-size: 14px;
     }
 }

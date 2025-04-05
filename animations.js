@@ -150,4 +150,6 @@ rAppPics.forEach((rAP, i) => {
         opacity: 0.1
     })
 })
+
+ScrollTrigger.refresh();
 })
