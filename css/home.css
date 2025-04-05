@@ -91,9 +91,9 @@ header
 .blob
 {
   position: absolute;
-  top: 15%;
+  top: 1%;
   width: 80%;
-  height: 90%;
+  height: 80%;
 
   -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -510,7 +510,7 @@ header
 
     .b-txt
     {
-        font-size: 40px;
+        font-size: 55px;
     }
 
     .abt-me

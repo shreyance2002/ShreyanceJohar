@@ -25,58 +25,6 @@
     font-style: normal;
 } */
 
-/* @keyframes left-appear
-{
-  from
-  {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to
-  {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes right-appear
-{
-  from
-  {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  to
-  {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes bottom-appear
-{
-  from
-  {
-    scale: 0.5;
-  }
-  to
-  {
-    scale: 1;
-  }
-}
-
-@keyframes bottom-disappear
-{
-  from
-  {
-    scale: 1;
-  }
-  to
-  {
-    scale: 0.1;
-  }
-} */
-
 *
 {
     margin: 0;
@@ -94,10 +42,15 @@ a
 body
 {
     font-family: "Figtree", serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     transition: 1s;
     background-color: var(--background-color);
     color: var(--main-color);
+}
+
+html
+{
+  overflow-x: hidden;
 }
 
 /* Container */
