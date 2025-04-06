@@ -1,5 +1,25 @@
 /* Css for project pages */
 
+:root
+{
+    --background-color: white;
+    --main-color: rgb(65,65,65);
+    --hl-color: black;
+}
+
+.dark-mode
+{
+    --background-color: black;
+    --main-color: rgb(173, 173, 173);
+    --hl-color: rgb(201, 201, 201);
+}
+
+.hl
+{
+    color: var(--hl-color);
+    font-weight: 500;
+}
+
 .pro-container
 {
     max-width: 70%;
@@ -198,6 +218,11 @@ header
     list-style: none;
 }
 
+.proj-list li
+{
+    font-weight: 300;
+}
+
 .pi-left .proj-heading
 {
   font-size: 18px;
@@ -313,6 +338,13 @@ header
   animation-timeline: view();
   animation-range: entry 0% cover 45%; */
 }
+
+.proj-info
+{
+    font-weight: 300;
+}
+
+
 
 /* Project Pics */
 
