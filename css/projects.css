@@ -251,12 +251,12 @@ header
   min-height: 50vh;
   max-height: 65vh;
   overflow: hidden;
-  opacity: 75%;
 }
 
 .nr-vid
 {
   filter: grayscale(100%);
+  opacity: 75%;
 }
 
 .nr-vid-ab
@@ -357,6 +357,13 @@ header
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+}
+
+.vid-long
+{
+    width: 100%;
+    height: 100%;
+    line-height: 0;
 }
 
 .proj-info

@@ -2,14 +2,14 @@
 
 :root
 {
-    --background-color: white;
-    --main-color: black;
+    --background-color: black;
+    --main-color: white;
 }
 
 .dark-mode
 {
-  --background-color: black;
-  --main-color: white;
+  --background-color: white;
+    --main-color: black;
 }
 
 .vol
