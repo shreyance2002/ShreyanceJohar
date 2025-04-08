@@ -359,6 +359,11 @@ header
     gap: 10px;
 }
 
+#p6-wid-p
+{
+    font-size: 14px;
+}
+
 .vid-long
 {
     width: 100%;
@@ -569,6 +574,8 @@ form textarea
     resize: none;
     transition: all 1s ease-in-out;
     border: 2px solid var(--main-color);
+
+    font-family: inherit;
 }
 
 form button
