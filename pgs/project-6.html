@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/wid.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="icon" href="../imgs/favicon.png" type="image/png">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+    <script src="../app.js" defer></script>
+    <script src="../projects.js" defer></script>
+    <script src="../animations.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+    <title>Communication and PR</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="../index.html">
+            <button class="button type1 h-btn">
+                <span class="btn-txt">Home</span>
+            </button>
+        </a>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <a href="../pgs/project-1.html">
+            <button class="button type1 np-btn">
+                <span class="btn-txt">Next Project</span>
+            </button>
+        </a>
+    </header>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="f-socials">
+            <a target="_blank" href="https://www.linkedin.com/in/shreyancejohar"><i class="f-logo fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.behance.net/shreyancejohar"><i class="f-logo fa-brands fa-behance"></i></a>
+            <a target="_blank" href="https://www.instagram.com/shreyance.jo?igsh=dm5ldGZ2b2IyeGgx"><i class="f-logo fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+  
+      <!-- Tools -->
+      <div class="tools">
+        <div class="f-socials">
+            <button id="theme-switch">
+              <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e8eaed"><path d="M482.31-160q-133.34 0-226.67-93.33-93.33-93.34-93.33-226.67 0-121.54 79.23-210.77t196.15-105.38q3.23 0 6.35.23 3.11.23 6.11.69-20.23 28.23-32.03 62.81-11.81 34.57-11.81 72.42 0 106.67 74.66 181.33Q555.64-404 662.31-404q38.07 0 72.54-11.81 34.46-11.81 61.92-32.04.46 3 .69 6.12.23 3.11.23 6.35-15.38 116.92-104.61 196.15T482.31-160Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e8eaed"><path d="M480-320q-66.85 0-113.42-46.58Q320-413.15 320-480t46.58-113.42Q413.15-640 480-640t113.42 46.58Q640-546.85 640-480t-46.58 113.42Q546.85-320 480-320ZM200-460H60v-40h140v40Zm700 0H760v-40h140v40ZM460-760v-140h40v140h-40Zm0 700v-140h40v140h-40ZM269.85-663.85l-86.39-83.92 27.77-29.77 84.46 85.39-25.84 28.3Zm478.92 481.39-84.69-85.62 26.07-28.07 86.39 83.92-27.77 29.77Zm-84.92-507.69 83.92-86.39 29.77 27.77-85.39 84.46-28.3-25.84ZM182.46-211.23l85.62-84.69 26.54 26.07-83.16 87.16-29-28.54Z"/></svg>
+            </button>
+            <button id="vol-switch">
+              <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e8eaed"><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e8eaed"><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Z"/></svg>
+            </button>
+        </div>
+      </div>
+
+     <!-- Side Bar -->
+      <div class="side-bar">
+        <a href="#overview" class="sb-a">Overview</a>
+        <a href="#my-appr" class="sb-a">Concept Note</a>
+        <a href="#m-b" class="sb-a">Mood Board</a>
+        <a href="#cs" class="sb-a">Cover Story</a>
+        <a href="#magz" class="sb-a">Magazine</a>
+        <a href="#reflections" class="sb-a">Reflections</a>
+      </div>
+
+      <!-- Project Title -->
+       <div class="pro-hero">
+        <div class="p1-heading">
+            <div class="logo-cont">
+                <img class="logo-img" src="../imgs/Project-6/logo.webp" alt="logo">
+            </div>
+        </div>
+        <h1 class="pt-2">Communication & PR</h1>
+       </div>
+
+        <div class="pro-title-img-cont">
+            <img class="title-img" src="../imgs/Project-6/Main.webp" alt="project-img">
+            <!-- <a href="#m-b"><div class="ar-cont"><img src="../imgs/down-arrow.png" alt="down-arrow"></div></a> -->
+        </div>
+
+       <!-- Project Info -->
+       <div class="pro-info pro-container" id="overview">
+        <div class="pi-left">
+            <span>
+                <h2 class="proj-heading sm-list">Duration</h2>
+                <p class="mv-txt">6 Weeks</p>
+            </span>
+            <span>
+                <h2 class="proj-heading">Time</h2>
+                <p class="mv-txt sm-list">10 Feb 2025 - 24 Mar 2025</p>
+            </span>
+            <span>
+                <h2 class="proj-heading">Role</h2>
+                <p class="mv-txt">
+                    <ul class="proj-list sm-list">
+                        <li>PR</li>
+                        <li>Communication Strategy</li>
+                        <li>Stakeholder Management</li>
+                        <li>Marketing Calendar</li>
+                        <li>PR Kit</li>
+                        <li>Press Release</li>
+                        <li>Social Media Page</li>
+                    </ul>
+                </p>
+            </span>
+        </div>
+        <div class="pi-right">
+            <h2 class="proj-heading">Overview</h2>
+            <p class="mv-txt">This project involved the application of public relations and communication principles to conceptualise and develop a comprehensive PR framework and narrative for a fashion brand. The aims and objectives were to understand the role of PR & communication strategy in building a brand identity and effective narrative; apply PR knowledge, to implement an effective communication strategy; and understand and analyse analog and digital communication mediums to establish a successful narrative.<br><br>
+                Key deliverables included a PR & Communication Strategy Proposal based on the RACE (Research, Action, Communication, Evaluation) model, a detailed Brand Narrative outlining the brand’s ethos and target market, a Stakeholder Management List, a Marketing Calendar, and a Campaign Design encompassing campaign ideas, narrative, and agenda. Furthermore, the project scope comprised a Press Kit with an Invite, a Press Release, a Social Media Page and a Fashion Promo Video.
+            </p>
+        </div>
+       </div>
+
+    <section class="nr-vid-cont">
+        <video class="nr-vid-ab" oncontextmenu="return false;" autoplay muted loop src="../imgs/Project-6/Main Video.mp4"></video>
+     </section>
+
+    <!-- Gallery -->
+
+     <!-- Project Photos -->
+     <div class="pro-container" id="magz">
+        <div class="wid-grid">
+            <div class="wid-gitem g-li"><img src="../imgs/Project-6/1.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-ri"><img src="../imgs/Project-6/2.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-li"><img src="../imgs/Project-6/5.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-ri"><img src="../imgs/Project-6/6.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-li"><img src="../imgs/Project-6/7.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-ri"><img src="../imgs/Project-6/8.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-li"><img src="../imgs/Project-6/9.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-ri"><img src="../imgs/Project-6/10.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-li"><img src="../imgs/Project-6/11.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+            <div class="wid-gitem g-ri"><img src="../imgs/Project-6/12.webp" alt="grid-photo" class="wid-gitem-img" onclick="this.requestFullscreen()"></div>
+        </div>
+     </div>
+
+     <div class="pro-container gal-long">
+            <div class="g-li"><img src="../imgs/Project-6/13.webp" alt="grid-photo" class="wid-gitem-img"></div>
+            <div class="g-ri"><img src="../imgs/Project-6/14.webp" alt="grid-photo" class="wid-gitem-img"></div>
+            <div class="g-li"><img src="../imgs/Project-6/15.webp" alt="grid-photo" class="wid-gitem-img"></div>
+            <div class="g-ri"><img src="../imgs/Project-6/14.webp" alt="grid-photo" class="wid-gitem-img"></div>
+     </div>
+
+     <!-- Photo Slider -->
+     <div class="slider">
+        <div class="list">
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/1.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/2.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/3.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/4.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/5.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/6.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/7.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/8.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/9.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/10.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/11.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/12.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/13.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/14.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/15.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/16.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/17.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/18.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/19.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/20.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/21.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/22.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/23.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/24.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/25.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/26.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/27.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/28.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/29.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/30.webp" alt="project-image" class="proj-img"></div>
+            <div class="item"><img loading="lazy" src="../imgs/Project-6/ss/31.webp" alt="project-image" class="proj-img"></div>
+
+        </div>
+        <div class="buttons">
+            <button id="prev" class="button-30" role="button"><</button>
+            <button id="next" class="button-30" role="button">></button>
+        </div>
+ </div>
+
+ <div class="proj-main pro-container" id="reflections">
+    <h2 class="proj-heading">Reflections</h2>
+    <p class="mv-txt"> Reflections working on this PR and communication strategy project deepened my understanding of how narrative and reputation connect. It reinforced the importance of: <br><br>  
+        <strong>Stakeholder Empathy:</strong> Building trust through clear, two‑way dialogue.<br><br>
+        <strong>Integrated Channels:</strong> Aligning digital and analog touchpoints for consistent messaging.<br><br>
+
+        <strong>Crisis Preparedness:</strong>Applying RACE principles to predict and reduce issues in real time. <br><br>
+        <strong>Challenges: </strong>Crafting a single story across different platforms while balancing creativity with consistent brand messaging under tight deadlines. <br><br>
+
+        <strong>Key Takeaways:</strong> Strategic planning demands empathy and adaptability; real‑time feedback and teamwork are vital to building strong, effective brand narratives.</p>
+</div>
+
+    <!-- Feedback Form -->
+    <section class="pro-container">
+        <h1 class="proj-heading">Thoughts?</h1>
+        <p class="proj-info">Feel free to write down what you think abouy my project!</p>
+
+        <div class="fb-form-cont">
+            <form action="">
+                <input type="text" name="name" placeholder="Name" class="fb-form-input" required maxlength="20">
+                <input type="email" name="email" placeholder="E-mail" class="fb-form-input" required>
+                <textarea name="message" placeholder="Your Message..." class="fb-form-input" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+     </section>
+</body>
+</html>

@@ -427,6 +427,11 @@ header
 
 .info-txt-ovr
 {
+    font-size: 20px;
+}
+
+.info-h
+{
     font-size: 24px;
 }
 

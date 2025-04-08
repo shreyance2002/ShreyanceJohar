@@ -223,6 +223,11 @@ header
     font-weight: 300;
 }
 
+.sm-list
+{
+    font-size: 13px;
+}
+
 .pi-left .proj-heading
 {
   font-size: 18px;
@@ -252,6 +257,14 @@ header
 .nr-vid
 {
   filter: grayscale(100%);
+}
+
+.nr-vid-ab
+{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-25%);
 }
 
 .nr-pic-cont
@@ -337,6 +350,13 @@ header
   /* animation: right-appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 45%; */
+}
+
+.gal-long
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 .proj-info
@@ -580,12 +600,14 @@ form button:hover
 
 .logo-cont
 {
-  width: 150px;
+  width: 232px;
+  height: 57px;
 }
 
 .logo-img
 {
   width: 100%;
+  height: 100%;
 }
 
 .pj3-cs

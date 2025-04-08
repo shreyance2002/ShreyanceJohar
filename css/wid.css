@@ -141,7 +141,7 @@ header
     height: 100%;
     object-fit: cover;
     cursor: pointer;
-    transition: 2s;
+    transition: 1s;
 }
 
 .wid-btn-cont
