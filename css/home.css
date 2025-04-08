@@ -330,6 +330,13 @@ header
     transform: scale(1.2);
 }
 
+td
+{
+    vertical-align: top;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
 /* End Section */
 
 .end-txt
