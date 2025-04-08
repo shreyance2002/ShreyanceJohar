@@ -117,7 +117,6 @@ gsap.from(pHeroImg, {
 // Animations for left appear pictures
 const lAppPics = document.querySelectorAll(".g-li");
 ScrollTrigger.refresh();
-console.log(lAppPics);
 lAppPics.forEach((lAP, i) => {
     gsap.from(lAP , {
         scrollTrigger: {
@@ -135,7 +134,6 @@ lAppPics.forEach((lAP, i) => {
 
 // Animations for right appear pictures
 const rAppPics = document.querySelectorAll(".g-ri");
-console.log(rAppPics);
 rAppPics.forEach((rAP, i) => {
     gsap.from(rAP , {
         scrollTrigger: {

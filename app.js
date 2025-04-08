@@ -10,14 +10,14 @@ const menuSlide = () => {
 menuSlide();
 
 // Code for background music
-const music = document.querySelector("audio");
-const volBtn = document.querySelector("#vol-switch");
-document.onmousedown = function(){
-    music.play();
-}
+// const music = document.querySelector("audio");
+// const volBtn = document.querySelector("#vol-switch");
+// // document.onmousedown = function(){
+// //     music.play();
+// // }
 
-volBtn.addEventListener("click", () => {
-    body.classList.toggle("vol");
+// volBtn.addEventListener("click", () => {
+//     body.classList.toggle("vol");
     // if(music.volume>0.1)
     // {
     //     music.volume = 0;
@@ -27,15 +27,15 @@ volBtn.addEventListener("click", () => {
     //     music.volume = 1;
     // }
 
-    if(music.muted)
-    {
-        music.muted = false;
-    }
-    else
-    {
-        music.muted = true;
-    }
-});
+//     if(music.muted)
+//     {
+//         music.muted = false;
+//     }
+//     else
+//     {
+//         music.muted = true;
+//     }
+// });
 
 // Code for Dark Mode
 const body = document.querySelector("body");

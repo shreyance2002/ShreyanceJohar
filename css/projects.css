@@ -618,10 +618,15 @@ form button:hover
   height: 57px;
 }
 
+.lc
+{
+  width: 84px;
+}
+
 .logo-img
 {
   width: 100%;
-  height: 100%;
+  object-fit: contain;
 }
 
 .pj3-cs
