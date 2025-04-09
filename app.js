@@ -9,34 +9,6 @@ const menuSlide = () => {
 }
 menuSlide();
 
-// Code for background music
-// const music = document.querySelector("audio");
-// const volBtn = document.querySelector("#vol-switch");
-// // document.onmousedown = function(){
-// //     music.play();
-// // }
-
-// volBtn.addEventListener("click", () => {
-//     body.classList.toggle("vol");
-    // if(music.volume>0.1)
-    // {
-    //     music.volume = 0;
-    // }
-    // else
-    // {
-    //     music.volume = 1;
-    // }
-
-//     if(music.muted)
-//     {
-//         music.muted = false;
-//     }
-//     else
-//     {
-//         music.muted = true;
-//     }
-// });
-
 // Code for Dark Mode
 const body = document.querySelector("body");
 const themeBtn = document.querySelector("#theme-switch");
@@ -60,4 +32,32 @@ if(darkmode === "active")
 themeBtn.addEventListener("click", () => {
     darkmode = localStorage.getItem("darkmode");
     darkmode !== "active" ? enableDarkMode() : disableDarkMode();
+});
+
+// Code for background music
+const music = document.querySelector("audio");
+const volBtn = document.querySelector("#vol-switch");
+document.onmousedown = function(){
+    music.play();
+}
+
+volBtn.addEventListener("click", () => {
+    body.classList.toggle("vol");
+    // if(music.volume>0.1)
+    // {
+    //     music.volume = 0;
+    // }
+    // else
+    // {
+    //     music.volume = 1;
+    // }
+
+    if(music.muted)
+    {
+        music.muted = false;
+    }
+    else
+    {
+        music.muted = true;
+    }
 });
