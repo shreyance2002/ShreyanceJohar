@@ -597,4 +597,14 @@ td
     {
         font-size: 14px;
     }
+
+    #aboutme
+    {
+        display: none;
+    }
+
+    .info-tile-cont
+    {
+        display: none;
+    }
 }
