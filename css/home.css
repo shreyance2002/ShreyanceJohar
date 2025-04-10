@@ -549,7 +549,7 @@ td
 
     .abt-txt
     {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .wid
@@ -564,7 +564,7 @@ td
 
     .wl-item
     {
-        font-size: 20px;
+        font-size: 30px;
         padding-left: 3rem;
         padding-bottom: 5%;
     }
@@ -598,13 +598,30 @@ td
         font-size: 14px;
     }
 
-    #aboutme
+    /* information Section */
+
+    .info
     {
-        display: none;
+        gap: 25px;
     }
 
     .info-tile-cont
     {
-        display: none;
+        flex-direction: column;
+    }
+
+    #c1
+    {
+        order: 2;
+    }
+
+    #c2
+    {
+        order: 1;
+    }
+
+    #c3
+    {
+        order: 3;
     }
 }
